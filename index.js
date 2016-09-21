@@ -444,6 +444,9 @@ var runServer = function(callback) {
                 console.log('server running');
             }
         });
+    })
+    .catch(function(err){
+        console.log(err)
     });
 };
 
