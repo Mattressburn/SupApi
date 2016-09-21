@@ -260,7 +260,7 @@ describe('GET', function() {
     });
 });
 
-describe('PUT', function() {
+describe.skip('PUT', function() {
     it('should allow editing a user', function(done) {
         // var newUser = {
         //     username: 'changedUser',
@@ -398,7 +398,7 @@ describe('PUT', function() {
     });
 });
 
-describe('DELETE', function() {
+describe.skip('DELETE', function() {
     it('should 404 on non-existent users', function() {
         var spy = makeSpy();
         // Try to delete a non-existent user
