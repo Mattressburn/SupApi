@@ -15,7 +15,7 @@ var should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('Message endpoints', function() {
+describe.skip('Message endpoints', function() {
     var server;
     beforeEach(function(done) {
         this.listPattern = new UrlPattern('/messages');
@@ -48,7 +48,7 @@ describe('Message endpoints', function() {
         }.bind(this));
     });
 
-    describe('/messages', function() {
+    describe.skip('/messages', function() {
         describe('GET', function() {
             it('should return an empty list of messages initially', function() {
                 // Get the list of messages
