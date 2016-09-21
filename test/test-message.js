@@ -15,7 +15,7 @@ var should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('Message endpoints', function() {
+describe.skip('Message endpoints', function() {
     var server;
     beforeEach(function(done) {
         this.listPattern = new UrlPattern('/messages');
