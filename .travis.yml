@@ -8,3 +8,9 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key: 9528ce78-9f41-4549-bec5-50d73222139f
+  app: quiet-fortress-91234
+  on:
+    repo: Mattressburn/SupApi
